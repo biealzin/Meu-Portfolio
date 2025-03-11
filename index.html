@@ -10,18 +10,28 @@
 
 <body>
 
-    <section class="principal hidden">
+    <nav class="hidden main-nav">
+        <a href="#home">Home</a></li>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    </header>
+
+
+    <section class="principal hidden" id="home">
         <div>
             <h1>Olá! Me chamo <span>Gabriel</span>.</h1>
             <p>Sou um desenvolvedor criativo, apaixonado por criar experiências digitais fluidas e interativas. Meu foco
                 está no desenvolvimento de interfaces intuitivas que proporcionam usabilidade aprimorada e design
                 sofisticado, sempre buscando oferecer soluções tecnológicas eficientes e claras.</p>
-            <a class="botao efeito-cursor">Ver Projetos</a>
+            <a class="botao efeito-cursor" href="#projetos">Ver Projetos</a>
         </div>
 
     </section>
 
-    <section class="sessao hidden">
+    <section class="sessao hidden" id="projetos">
         <h2 class="titulo-sessao">Projetos</h2>
         <div class="grade-projeto">
             <div class="card-projeto efeito-cursor">
@@ -38,7 +48,7 @@
 
     </section>
 
-    <section class="secao hidden">
+    <section class="secao hidden" id="sobre">
         <h2 class="titulo-secao">Sobre Mim</h2>
 
         <div class="sobre">
@@ -73,7 +83,7 @@
 
     </section>
 
-    <section class="secao hidden">
+    <section class="secao hidden" id="contato">
         <h2 class="titulo-secao">Contato</h2>
 
         <div class="botoes-contato">
@@ -126,7 +136,7 @@
 
     </section>
 
-    <footer>
+    <footer class="hidden">
         <p>Feito com carinho por Gabriel Viana</p>
     </footer>
 
@@ -138,11 +148,11 @@
     const cursor = document.querySelector('.cursor')
 
     document.addEventListener('mousemove', function (info) {
-        cursor.style.left = info.clientX  + 'px'
+        cursor.style.left = info.clientX + 'px'
         cursor.style.top = info.clientY + 'px'
     })
 
-        </script >
+</script>
 
 <script src="scripts.js"></script>
 
